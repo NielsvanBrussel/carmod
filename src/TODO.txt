@@ -1,0 +1,23 @@
+
+// blender
+
+[] wheels (+ suspension?)
+[x] grille
+[] hood
+[x] spoiler
+[x] bumpers
+[x] lights
+[x] exhaust
+[x] skirts?
+[] colors
+[] rims
+[] antenna
+
+// code
+
+[x] load different parts
+[] colors
+[x] background ?
+[x] conditional rendering optional parts
+[] camera angle per section
+[x] title
