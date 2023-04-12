@@ -15,15 +15,13 @@ import Exhaust from './Exhaust'
 import Roof from './Roof'
 
 const Model = (props) => {
+
     const { nodes, materials } = useGLTF('./cartest.glb')
-    const { activeParts } = useContext(GlobalContext)
-
-    console.log(materials)
-
-    const { camera }= useThree()
-    const { activeSection } = useContext(GlobalContext)
-    
+    const { activeParts, activeSection } = useContext(GlobalContext)
+    const { camera }= useThree()    
   
+    // change POV depending on active section
+
     useEffect(() => {
       if (
         activeSection === 'exhaust' ||
@@ -40,7 +38,8 @@ const Model = (props) => {
         camera.position.set(2, 0, -9);
       } 
       else if (
-        activeSection === 'hood'
+        activeSection === 'hood' ||
+        activeSection === 'frontWindow'
       ) {
         camera.position.set(4.5, 3, -7.5);
       } 
@@ -51,7 +50,8 @@ const Model = (props) => {
       } 
       else if (
         activeSection === 'spoiler' ||
-        activeSection === 'rearWindow'
+        activeSection === 'rearWindow' ||
+        activeSection === 'roof'
       ) {
         camera.position.set(2.5, 2, 8);
       } else {
@@ -59,9 +59,6 @@ const Model = (props) => {
       }
     }, [activeSection])
  
-
-    // console.log(nodes)
-    // console.log(materials)
 
     return (
       <group {...props} dispose={null}>
@@ -99,9 +96,7 @@ const Model = (props) => {
             geometry={nodes.Rims.geometry}
             material={materials.grey_metal}
         />
-
-
-
+        
       </group>
     )
 }

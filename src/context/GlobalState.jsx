@@ -37,7 +37,6 @@ export const GlobalProvider = ({ children }) => {
 
 
     const changePart = ({name, id}) => {
-        console.log('allo')
         setActiveParts(prevState => {
             return({
               ...prevState,
