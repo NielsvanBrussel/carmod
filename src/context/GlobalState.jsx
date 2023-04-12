@@ -25,6 +25,10 @@ export const GlobalProvider = ({ children }) => {
     useEffect(() => {
       console.log(activeParts)
     }, [activeParts])
+
+    useEffect(() => {
+      console.log(activeSection)
+    }, [activeSection])
     
     const [activePrimaryColor, setActivePrimaryColor] = useState('red')
     const [activeSecondaryColor, setActiveSecondaryColor] = useState('black')

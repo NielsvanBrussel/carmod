@@ -19,5 +19,5 @@
 [] colors
 [x] background ?
 [x] conditional rendering optional parts
-[] camera angle per section
+[x] camera angle per section
 [x] title

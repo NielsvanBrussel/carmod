@@ -1,11 +1,11 @@
-import { useState, Suspense } from 'react'
+import { Suspense } from 'react'
 import './App.css'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Sky } from '@react-three/drei'
-
+import { OrbitControls, Sky, CameraControls } from '@react-three/drei'
 import Model from './Models/Model'
 import Loading from './components/Loading'
 import SideBar from './components/SideBar'
+
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
                   fov: 45,
                   near: 0.1,
                   far: 200,
-                  position: [ - 8, 2, -5 ]
+                  position: [ 12, 4, -7 ]
               } }
           >
               
