@@ -12,10 +12,13 @@ import Spoiler from './Spoiler'
 import Hood from './Hood'
 import Grille from './Grille'
 import Exhaust from './Exhaust'
+import Roof from './Roof'
 
 const Model = (props) => {
-    const { nodes, materials } = useGLTF('./car_final.glb')
+    const { nodes, materials } = useGLTF('./cartest.glb')
     const { activeParts } = useContext(GlobalContext)
+
+    console.log(materials)
 
     const { camera }= useThree()
     const { activeSection } = useContext(GlobalContext)
@@ -51,6 +54,8 @@ const Model = (props) => {
         activeSection === 'rearWindow'
       ) {
         camera.position.set(2.5, 2, 8);
+      } else {
+        camera.position.set(12, 4, -7);
       }
     }, [activeSection])
  
@@ -85,11 +90,14 @@ const Model = (props) => {
         {/* exhaust */}
         <Exhaust nodes={nodes} materials={materials} activeParts={activeParts}/>
 
+        {/* roof */}
+        <Roof nodes={nodes} materials={materials} activeParts={activeParts}/>
+
         <mesh
             castShadow
             receiveShadow
             geometry={nodes.Rims.geometry}
-            material={materials.metal}
+            material={materials.grey_metal}
         />
 
 

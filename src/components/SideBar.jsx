@@ -99,6 +99,22 @@ const car = {
                 {id: 1, title: 'closed back window vent'},
             ]
         },
+        {
+            title: 'Front Window',
+            name: 'frontWindow',
+            elements: [
+                {id: 0, title: 'none'},
+                {id: 1, title: 'sunstrip'},
+            ]
+        },
+        {
+            title: 'Roof',
+            name: 'roof',
+            elements: [
+                {id: 0, title: 'none'},
+                {id: 1, title: 'antenna'},
+            ]
+        },
     ]
 }
 

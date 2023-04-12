@@ -19,16 +19,18 @@ export const GlobalProvider = ({ children }) => {
         rearBumper: 0,
         frontLights: 0,
         rearLights: 0,
+        frontWindow: 0,
         rearWindow: 0,
+        roof: 0,
     })
 
-    useEffect(() => {
-      console.log(activeParts)
-    }, [activeParts])
+    // useEffect(() => {
+    //   console.log(activeParts)
+    // }, [activeParts])
 
-    useEffect(() => {
-      console.log(activeSection)
-    }, [activeSection])
+    // useEffect(() => {
+    //   console.log(activeSection)
+    // }, [activeSection])
     
     const [activePrimaryColor, setActivePrimaryColor] = useState('red')
     const [activeSecondaryColor, setActiveSecondaryColor] = useState('black')

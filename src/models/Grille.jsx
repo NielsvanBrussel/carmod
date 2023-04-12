@@ -7,21 +7,21 @@ const Grille = ({ nodes, materials, activeParts }) => {
           castShadow
           receiveShadow
           geometry={nodes.Grille001.geometry}
-          material={materials.carbon}
+          material={materials.carbon2}
           visible={activeParts.grille === 0}
       />
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.Grille002.geometry}
-          material={materials.carbon}
+          material={materials.carbon2}
           visible={activeParts.grille === 1}
       />
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.Grille003.geometry}
-          material={materials.carbon}
+          material={materials.carbon2}
           visible={activeParts.grille === 2}
       />
     </>

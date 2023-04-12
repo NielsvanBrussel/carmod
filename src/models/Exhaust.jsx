@@ -7,21 +7,21 @@ const Exhaust = ({ nodes, materials, activeParts }) => {
           castShadow
           receiveShadow
           geometry={nodes.Exhaust000.geometry}
-          material={materials.carbon}
+          material={materials.grey_metal}
           visible={activeParts.exhaust === 0}
       />
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.Exhaust001.geometry}
-          material={materials.carbon}
+          material={materials.grey_metal}
           visible={activeParts.exhaust === 1}
       />
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.Exhaust002.geometry}
-          material={materials.carbon}
+          material={materials.grey_metal}
           visible={activeParts.exhaust === 2}
       />
     </>

@@ -8,7 +8,7 @@ const Lights = ({ nodes, materials, activeParts }) => {
             castShadow
             receiveShadow
             geometry={nodes.Headlights000.geometry}
-            material={materials.metal}
+            material={materials.grey_metal}
             visible={activeParts.frontLights === 0}
         />
         <mesh
@@ -22,7 +22,7 @@ const Lights = ({ nodes, materials, activeParts }) => {
             castShadow
             receiveShadow
             geometry={nodes.Headlights001.geometry}
-            material={materials.metal}
+            material={materials.grey_metal}
             visible={activeParts.frontLights === 1}
         />
         <mesh
@@ -36,7 +36,7 @@ const Lights = ({ nodes, materials, activeParts }) => {
             castShadow
             receiveShadow
             geometry={nodes.Headlights002.geometry}
-            material={materials.metal}
+            material={materials.grey_metal}
             visible={activeParts.frontLights === 2}
         />
         <mesh
@@ -50,42 +50,42 @@ const Lights = ({ nodes, materials, activeParts }) => {
             castShadow
             receiveShadow
             geometry={nodes.Taillights000.geometry}
-            material={materials.metal}
+            material={materials.grey_metal}
             visible={activeParts.rearLights === 0}
         />
         <mesh
             castShadow
             receiveShadow
             geometry={nodes.Taillights_bulb000.geometry}
-            material={materials.light}
+            material={materials.redlight}
             visible={activeParts.rearLights === 0}
         />
         <mesh
             castShadow
             receiveShadow
             geometry={nodes.Taillights001.geometry}
-            material={materials.metal}
+            material={materials.grey_metal}
             visible={activeParts.rearLights === 1}
         />
         <mesh
             castShadow
             receiveShadow
             geometry={nodes.Taillights_bulb001.geometry}
-            material={materials.light}
+            material={materials.redlight}
             visible={activeParts.rearLights === 1}
         />
         <mesh
             castShadow
             receiveShadow
             geometry={nodes.Taillights002.geometry}
-            material={materials.metal}
+            material={materials.grey_metal}
             visible={activeParts.rearLights === 2}
         />
         <mesh
             castShadow
             receiveShadow
             geometry={nodes.Taillights_bulb002.geometry}
-            material={materials.light}
+            material={materials.redlight}
             visible={activeParts.rearLights === 2}
         />
     </>

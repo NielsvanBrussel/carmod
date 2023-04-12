@@ -7,21 +7,21 @@ const Hood = ({ nodes, materials, activeParts }) => {
           castShadow
           receiveShadow
           geometry={nodes.Hood000.geometry}
-          material={materials.red}
+          material={materials.green_metal}
           visible={activeParts.hood === 0}
       />
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.Hood001.geometry}
-          material={materials.red}
+          material={materials.green_metal}
           visible={activeParts.hood === 1}
       />
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.Hood002.geometry}
-          material={materials.red}
+          material={materials.green_metal}
           visible={activeParts.hood === 2}
       />
     </>

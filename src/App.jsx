@@ -29,7 +29,8 @@ function App() {
               } }
           >
               
-              <directionalLight intensity={1}/>
+              <directionalLight position={[30, 0, 20]} intensity={1}/>
+              <directionalLight position={[30, 50, 0]} intensity={1}/>
               <ambientLight intensity={1} />
               <Sky sunPosition={[30, 0, 20]} />
               <OrbitControls />

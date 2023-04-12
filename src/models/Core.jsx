@@ -8,7 +8,7 @@ const Core = ({ nodes, materials }) => {
             castShadow
             receiveShadow
             geometry={nodes.Car_core_lower.geometry}
-            material={materials['Material.001']}
+            material={materials.green}
         />
         <mesh
             castShadow
@@ -20,12 +20,18 @@ const Core = ({ nodes, materials }) => {
             castShadow
             receiveShadow
             geometry={nodes.Car_core_upper.geometry}
-            material={materials.red}
+            material={materials.green_metal}
         />
         <mesh
             castShadow
             receiveShadow
             geometry={nodes.Car_core_windows.geometry}
+            material={materials.glass}
+        />
+        <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Gascap.geometry}
             material={materials.black}
         />
         <mesh

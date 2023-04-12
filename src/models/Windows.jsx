@@ -7,8 +7,15 @@ const Windows = ({ nodes, materials, activeParts }) => {
           castShadow
           receiveShadow
           geometry={nodes.BackWindow.geometry}
-          material={materials.red}
+          material={materials.green_metal}
           visible={activeParts.rearWindow === 1}
+      />
+      <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Sunstrip.geometry}
+          material={materials.black}
+          visible={activeParts.frontWindow === 1}
       />
     </>
   )
