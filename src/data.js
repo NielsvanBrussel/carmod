@@ -42,7 +42,7 @@ export const car = {
             title: 'Exhaust',
             name: 'exhaust',
             elements: [
-                {id: 0, title: 'default'},
+                {id: 0, title: 'stock exhaust'},
                 {id: 1, title: 'upswept'},
                 {id: 2, title: 'oval'}
             ]
@@ -51,9 +51,9 @@ export const car = {
             title: 'Spoiler',
             name: 'spoiler',
             elements: [
-                {id: 0, title: 'default'},
-                {id: 1, title: 'default2'},
-                {id: 2, title: 'default3'},
+                {id: 0, title: 'stock spoiler'},
+                {id: 1, title: 'low level carbon spoiler'},
+                {id: 2, title: 'tuner wing'},
                 {id: 3, title: 'none'}
             ]
         },
@@ -62,7 +62,7 @@ export const car = {
             name: 'frontBumper',
             elements: [
                 {id: 0, title: 'default bumper'},
-                {id: 1, title: 'tuner bumper'},
+                {id: 1, title: 'large splitter'},
                 {id: 2, title: 'none'},
             ]
         },
@@ -70,8 +70,8 @@ export const car = {
             title: 'Rear Bumper',
             name: 'rearBumper',
             elements: [
-                {id: 0, title: 'default bumper'},
-                {id: 1, title: 'tuner bumper'},
+                {id: 0, title: 'stock bumper'},
+                {id: 1, title: 'GT diffuser'},
                 {id: 2, title: 'none'},
             ]
         },
@@ -79,7 +79,7 @@ export const car = {
             title: 'Skirts',
             name: 'skirts',
             elements: [
-                {id: 0, title: 'default skirts'},
+                {id: 0, title: 'stock skirts'},
                 {id: 1, title: 'tuner skirts'},
                 {id: 2, title: 'none'},
             ]
@@ -97,9 +97,10 @@ export const car = {
             title: 'Hood',
             name: 'hood',
             elements: [
-                {id: 0, title: 'default'},
-                {id: 1, title: 'default2'},
-                {id: 2, title: 'default3'}
+                {id: 0, title: 'stock hood'},
+                {id: 1, title: 'square vents'},
+                {id: 2, title: 'ram air hood'},
+                {id: 3, title: 'single intake bug catcher'},
             ]
         },
         {
@@ -126,6 +127,7 @@ export const car = {
             elements: [
                 {id: 0, title: 'none'},
                 {id: 1, title: 'closed back window vent'},
+                {id: 2, title: 'closed back and side window vent'},
             ]
         },
         {

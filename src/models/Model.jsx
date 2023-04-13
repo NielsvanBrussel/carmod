@@ -16,7 +16,7 @@ import Roof from './Roof'
 
 const Model = (props) => {
 
-    const { nodes, materials } = useGLTF('./cartest.glb')
+    const { nodes, materials } = useGLTF('./car.glb')
     const { activeParts, activeSection, primaryColor, secondaryColor } = useContext(GlobalContext)
     const { camera }= useThree()    
 
@@ -73,7 +73,7 @@ const Model = (props) => {
         <Core nodes={nodes} materials={materials} primaryColor={primaryColor} secondaryColor={secondaryColor}/>
 
         { /* front bumpers, rear bumpers & skirts */}
-        <Bumpers nodes={nodes} materials={materials} activeParts={activeParts}/>
+        <Bumpers nodes={nodes} materials={materials} activeParts={activeParts} secondaryColor={secondaryColor}/>
 
         {/* lights */}
         <Lights nodes={nodes} materials={materials} activeParts={activeParts}/>

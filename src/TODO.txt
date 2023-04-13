@@ -9,17 +9,17 @@
 [x] lights
 [x] exhaust
 [x] skirts?
-[] colors
+[x] colors
 [] rims
-[] antenna
+[x] antenna
 
 // code
 
 [x] load different parts
-[] colors
+[x] colors
 [x] background ?
 [x] conditional rendering optional parts
 [x] camera angle per section
 [x] title
-[] svg
+[x] svg
 [] ground?

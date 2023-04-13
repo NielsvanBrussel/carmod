@@ -24,6 +24,20 @@ const Hood = ({ nodes, materials, activeParts, primaryColor }) => {
           material={materials[primaryColor]}
           visible={activeParts.hood === 2}
       />
+      <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Hood003.geometry}
+          material={materials[primaryColor]}
+          visible={activeParts.hood === 3}
+      />
+      <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Hood004.geometry}
+          material={materials.carbon2}
+          visible={activeParts.hood === 3}
+      />
     </>
   )
 }
