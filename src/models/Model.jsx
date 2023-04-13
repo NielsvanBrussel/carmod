@@ -19,7 +19,7 @@ const Model = (props) => {
     const { nodes, materials } = useGLTF('./cartest.glb')
     const { activeParts, activeSection, primaryColor, secondaryColor } = useContext(GlobalContext)
     const { camera }= useThree()    
-    
+
     // useFrame((state) =>
     // {
     //     console.log(state.camera.position)
@@ -79,7 +79,7 @@ const Model = (props) => {
         <Lights nodes={nodes} materials={materials} activeParts={activeParts}/>
 
         {/* windows */}
-        <Windows nodes={nodes} materials={materials} activeParts={activeParts}/>
+        <Windows nodes={nodes} materials={materials} activeParts={activeParts} primaryColor={primaryColor}/>
 
         {/* spoilers */}
         <Spoiler nodes={nodes} materials={materials} activeParts={activeParts} primaryColor={primaryColor}/>

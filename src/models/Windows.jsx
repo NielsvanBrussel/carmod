@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Windows = ({ nodes, materials, activeParts }) => {
+const Windows = ({ nodes, materials, activeParts, primaryColor }) => {
   return (
     <>
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.BackWindow.geometry}
-          material={materials.green_metal}
+          material={materials[primaryColor]}
           visible={activeParts.rearWindow === 1}
       />
       <mesh
