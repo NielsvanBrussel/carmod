@@ -21,3 +21,5 @@
 [x] conditional rendering optional parts
 [x] camera angle per section
 [x] title
+[] svg
+[] ground?

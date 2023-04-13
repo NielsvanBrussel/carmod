@@ -17,8 +17,14 @@ import Roof from './Roof'
 const Model = (props) => {
 
     const { nodes, materials } = useGLTF('./cartest.glb')
-    const { activeParts, activeSection } = useContext(GlobalContext)
+    const { activeParts, activeSection, primaryColor, secondaryColor } = useContext(GlobalContext)
     const { camera }= useThree()    
+    
+    // useFrame((state) =>
+    // {
+    //     console.log(state.camera.position)
+    // })
+
   
     // change POV depending on active section
 
@@ -61,10 +67,10 @@ const Model = (props) => {
  
 
     return (
-      <group {...props} dispose={null}>
+      <group {...props} >
 
         { /* static part of the car (frame/chassis/windows/wheels) */}
-        <Core nodes={nodes} materials={materials}/>
+        <Core nodes={nodes} materials={materials} primaryColor={primaryColor} secondaryColor={secondaryColor}/>
 
         { /* front bumpers, rear bumpers & skirts */}
         <Bumpers nodes={nodes} materials={materials} activeParts={activeParts}/>
@@ -76,10 +82,10 @@ const Model = (props) => {
         <Windows nodes={nodes} materials={materials} activeParts={activeParts}/>
 
         {/* spoilers */}
-        <Spoiler nodes={nodes} materials={materials} activeParts={activeParts}/>
+        <Spoiler nodes={nodes} materials={materials} activeParts={activeParts} primaryColor={primaryColor}/>
 
         {/* hood */}
-        <Hood nodes={nodes} materials={materials} activeParts={activeParts}/>
+        <Hood nodes={nodes} materials={materials} activeParts={activeParts} primaryColor={primaryColor}/>
 
         {/* grille */}
         <Grille nodes={nodes} materials={materials} activeParts={activeParts}/>

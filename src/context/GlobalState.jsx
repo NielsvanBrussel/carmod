@@ -6,9 +6,9 @@ export const GlobalContext = createContext()
 
 export const GlobalProvider = ({ children }) => {
 
-
     const [activeSection, setActiveSection] = useState('')
-
+    const [PrimaryColor, setPrimaryColor] = useState('red')
+    const [SecondaryColor, setSecondaryColor] = useState('red')
     const [activeParts, setActiveParts] = useState({
         grille: 0,
         exhaust: 0,
@@ -24,18 +24,7 @@ export const GlobalProvider = ({ children }) => {
         roof: 0,
     })
 
-    // useEffect(() => {
-    //   console.log(activeParts)
-    // }, [activeParts])
-
-    // useEffect(() => {
-    //   console.log(activeSection)
-    // }, [activeSection])
-    
-    const [activePrimaryColor, setActivePrimaryColor] = useState('red')
-    const [activeSecondaryColor, setActiveSecondaryColor] = useState('black')
-
-
+   
     const changePart = ({name, id}) => {
         setActiveParts(prevState => {
             return({
@@ -49,6 +38,10 @@ export const GlobalProvider = ({ children }) => {
                 value={{
                     activeParts: activeParts,
                     activeSection: activeSection,
+                    primaryColor: PrimaryColor,
+                    secondaryColor: SecondaryColor,
+                    setPrimaryColor,
+                    setSecondaryColor,
                     changePart,
                     setActiveSection,
                 }}>

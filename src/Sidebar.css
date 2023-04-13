@@ -45,6 +45,44 @@ h3 {
 }
 
 
+.colorpicker {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.colorpicker_flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.colorpicker__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 0rem 0rem 1rem 0rem;
+    max-width: 8rem;
+    flex-wrap: wrap;
+}
+
+.colorpicker h4 {
+    padding: 0.5rem 0rem 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.colorpicker h3 {
+    padding: 1rem 0rem;
+    margin: 0;
+}
+
+
 
 @font-face {
     font-family: "Barlow-Regular-SemiBold";

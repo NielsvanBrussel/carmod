@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Core = ({ nodes, materials }) => {
+const Core = ({ nodes, materials, primaryColor, secondaryColor }) => {
 
   return (
     <>
@@ -8,7 +8,7 @@ const Core = ({ nodes, materials }) => {
             castShadow
             receiveShadow
             geometry={nodes.Car_core_lower.geometry}
-            material={materials.green}
+            material={materials[secondaryColor]}
         />
         <mesh
             castShadow
@@ -20,7 +20,7 @@ const Core = ({ nodes, materials }) => {
             castShadow
             receiveShadow
             geometry={nodes.Car_core_upper.geometry}
-            material={materials.green_metal}
+            material={materials[primaryColor]}
         />
         <mesh
             castShadow

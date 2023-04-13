@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Spoiler = ({ nodes, materials, activeParts }) => {
+const Spoiler = ({ nodes, materials, activeParts, primaryColor }) => {
   return (
     <>
       <mesh
           castShadow
           receiveShadow
           geometry={nodes.Spoiler000.geometry}
-          material={materials.green_metal}
+          material={materials[primaryColor]}
           visible={activeParts.spoiler === 0}
       />
       <mesh
@@ -21,7 +21,7 @@ const Spoiler = ({ nodes, materials, activeParts }) => {
           castShadow
           receiveShadow
           geometry={nodes.Spoiler002.geometry}
-          material={materials.green_metal}
+          material={materials[primaryColor]}
           visible={activeParts.spoiler === 2}
       />
     </>

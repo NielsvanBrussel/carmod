@@ -4,6 +4,7 @@
   padding: 0rem;
   text-align: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header {
@@ -17,6 +18,7 @@
 
 .sidebar {
   min-width: 20rem;
+  width: 20rem;
   height: 100vh;
   overflow-y: scroll;
   border-right: solid 5px grey;
@@ -31,5 +33,47 @@
 .sidebar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.colorpicker__container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #242424;
+  width: calc(100vw - 20rem);
+  border-top: solid 5px grey;
+  padding-bottom: 1rem;
+}
+
+.colorpicker__closebutton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.colorpicker__openbutton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #242424;
+  min-width: 5rem;
+  min-height: 5rem;
+  width: 7vw;
+  height: 7vw;
+  margin: 2rem;
+  border: solid 5px grey;
+  border-radius: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.colorpicker__openbutton:hover, .colorpicker__closebutton:hover{
+  opacity: 0.7;
 }
 
