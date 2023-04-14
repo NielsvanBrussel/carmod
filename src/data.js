@@ -98,8 +98,8 @@ export const car = {
             name: 'hood',
             elements: [
                 {id: 0, title: 'stock hood'},
-                {id: 1, title: 'square vents'},
-                {id: 2, title: 'ram air hood'},
+                {id: 1, title: 'ram air hood'},
+                {id: 2, title: 'square vents'},
                 {id: 3, title: 'single intake bug catcher'},
             ]
         },

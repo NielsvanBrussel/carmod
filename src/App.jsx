@@ -24,12 +24,14 @@ function App() {
           <SideBar />
         </div>
         {colorPicker ? 
-          <div className='colorpicker__container'>
+        <div className='colorpicker__container__outer'>
+          <div className='colorpicker__container__inner'>
             <div className='colorpicker__closebutton' onClick={() => setColorPicker(false)}>
               <IoCloseSharp size={32} />
             </div>
             <ColorPicker />
           </div>
+        </div>
         :
           <div className='colorpicker__openbutton' onClick={() => setColorPicker(true)}>
             <RiPaintBrushFill size={32} />

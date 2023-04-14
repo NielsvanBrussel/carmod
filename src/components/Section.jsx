@@ -16,9 +16,12 @@ const Section = ({id, title, elements}) => {
             <IoIosArrowDropupCircle size={24}/>
             <h3>{title}</h3>
           </div>
-          <div className='section__content'>
-            {elements.map(item => <SectionItem key={item.id} id={item.id} name={id} title={item.title}/>)}
+          <div className='section__content__container'>
+            <div className='section__content'>
+              {elements.map(item => <SectionItem key={item.id} id={item.id} name={id} title={item.title}/>)}
+            </div>            
           </div>
+
         </div>
       :
         <div>

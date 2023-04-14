@@ -1,3 +1,23 @@
+@keyframes expanding2 {
+  0% {
+      margin-bottom: -30%;
+  }
+  100% {
+      margin-bottom: 0%;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,16 +55,24 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.colorpicker__container {
+
+.colorpicker__container__outer {
+  overflow: hidden;
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 3;
-  background-color: #242424;
   width: calc(100vw - 20rem);
+}
+
+.colorpicker__container__inner {
+  background-color: #242424;
   border-top: solid 5px grey;
   padding-bottom: 1rem;
+  margin-bottom: 0%;
+  animation: expanding2 linear 0.5s;
 }
+
 
 .colorpicker__closebutton {
   position: absolute;
@@ -71,6 +99,7 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  animation: fade-in linear 1s;
 }
 
 .colorpicker__openbutton:hover, .colorpicker__closebutton:hover{

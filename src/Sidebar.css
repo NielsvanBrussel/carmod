@@ -1,3 +1,13 @@
+
+@keyframes expanding {
+    0% {
+        margin-top: -50%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
 .section__item {
     display: flex;
     flex-direction: row;
@@ -40,8 +50,15 @@ h3 {
     font-size: 1.25rem;
 }
 
+
+.section__content__container {
+    overflow: hidden;
+}
+
 .section__content {
     margin: 2rem 0rem 0rem 2rem;
+    margin-top: 0%;
+    animation: expanding linear 0.3s;
 }
 
 
