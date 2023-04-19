@@ -12,10 +12,10 @@ const ColorPicker = () => {
   return (
     <div className='colorpicker_flexbox'>
        <div className='colorpicker'>
-        <h3>Primary color</h3>
+        <h3 className='colorpicker__h3'>Primary color</h3>
         <div className='colorpicker_flexbox'>
             <div>
-                <h4>regular</h4>
+                <h4 className='colorpicker__h4'>regular</h4>
                 <div className='colorpicker__item'>
                     {car.colors.map(color => 
                         <ColorPickerItem 
@@ -30,7 +30,7 @@ const ColorPicker = () => {
                 </div>                
             </div>
             <div>
-                <h4>metallic</h4>
+                <h4 className='colorpicker__h4'>metallic</h4>
                 <div className='colorpicker__item'>
                     {car.colors.map(color => 
                         <ColorPickerItem 
