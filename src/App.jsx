@@ -53,9 +53,9 @@ function App() {
               <directionalLight position={[0, 50, -10]} intensity={0.6}/>
               <directionalLight position={[-30, 5, 0]} intensity={0.3}/>
               <ambientLight intensity={1} />
-              <Sky sunPosition={[30, 0, 20]} />
+              <Sky sunPosition={[30, 3, 20]} />
 
-              <OrbitControls />
+              <OrbitControls maxPolarAngle={Math.PI / 2} minPolarAngle={0}/>
               <Suspense fallback={ <Loading /> }> 
                 <Model />
               </Suspense>

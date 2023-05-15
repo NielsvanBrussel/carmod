@@ -16,9 +16,11 @@ import Roof from './Roof'
 
 const Model = (props) => {
 
-    const { nodes, materials } = useGLTF('./car.glb')
+    const { nodes, materials } = useGLTF('./carfinal.glb')
     const { activeParts, activeSection, primaryColor, secondaryColor } = useContext(GlobalContext)
     const { camera }= useThree()    
+
+    console.log(nodes)
 
     // useFrame((state) =>
     // {
@@ -102,6 +104,8 @@ const Model = (props) => {
             geometry={nodes.Rims.geometry}
             material={materials.grey_metal}
         />
+
+        <primitive object={nodes['Ground']}/>
         
       </group>
     )
